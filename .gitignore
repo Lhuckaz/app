@@ -32,3 +32,4 @@ node_modules
 # Idea project files
 .idea/
 *.iml
+.vscode

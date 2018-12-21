@@ -29,12 +29,12 @@
 		</dependency>
 		<!-- 2P -->
 		<dependency>
-			<groupId>br.com.app</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>app-api</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>br.com.app</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>app-ui</artifactId>
 			<version>${project.version}</version>
 			<scope>runtime</scope>
@@ -42,6 +42,10 @@
 	</dependencies>
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<executions>
